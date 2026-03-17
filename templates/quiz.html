@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<title>Quiz</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="box">
+<h2>Aptitude Quiz</h2>
+<form method="post" action="/submit">
+{% for q in questions %}
+<p><b>{{loop.index}}. {{q[1]}}</b></p>
+<input type="radio" name="{{q[0]}}" value="{{q[2]}}"> {{q[2]}}<br>
+<input type="radio" name="{{q[0]}}" value="{{q[3]}}"> {{q[3]}}<br>
+<input type="radio" name="{{q[0]}}" value="{{q[4]}}"> {{q[4]}}<br>
+<input type="radio" name="{{q[0]}}" value="{{q[5]}}"> {{q[5]}}<br>
+{% endfor %}
+<br>
+<button type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
