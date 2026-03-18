@@ -19,9 +19,9 @@ input {
 }
 
 button {
-    padding: 8px 20px;
+    padding: 10px 20px;
     background: blue;
-    color: white;
+    color: rgb(245, 230, 230);
     border: none;
 }
 
